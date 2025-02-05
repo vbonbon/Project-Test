@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="tutorial.html">Tutorials</a>
+            <a href="shoppingcart.html">Shopping Cart</a>
+        </nav>
+        <h1>Check out our Plushies!</h1>
+    </header>
+
+    <main>
+        <div class="home-container">
+            <aside>
+                <h2>Cart Overview</h2>
+                <ul id="cart">
+                    <li>No items in the cart yet.</li>
+                </ul>
+                <button id="view-cart">View Full Cart</button>
+            </aside>
+
+            <section>
+                <div class="product">
+                    <h2>Mochi Bunny</h2>
+                    <p class="description">A soft and cuddly mochi-style bunny plushie.</p>
+                    <p><img src="https://cdn.shopify.com/s/files/1/1163/8814/files/IMGP9213_1024x1024.jpg?v=1640107635" width="200" alt="Mochi Bunny"></p>
+                    <p>Price: Php 150</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <h2>Pink Rose</h2>
+                    <p class="description">A delicate crochet rose plushie, perfect as a gift.</p>
+                    <p><img src="your-image-url-here" width="200" alt="Pink Rose"></p>
+                    <p>Price: Php 300</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/products.js"></script>
+    <footer>
+        <p>&copy; 2024 Fluff & Stuff</p>
+    </footer>
+</body>
+</html>
+
+
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #fef9f9;
+        color: #333;
+    }
+
+    header {
+        background-color: #ffb6c1;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #ffc0cb;
+        padding: 0.5rem 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .product {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .product h2 {
+        color: #ff69b4;
+    }
+
+    button {
+        background-color: #ff69b4;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ff1493;
+    }
+
+    aside {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    aside h2 {
+        color: #ff69b4;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #ffb6c1;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
